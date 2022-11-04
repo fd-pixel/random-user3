@@ -1,13 +1,56 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  height: 60px;
+}
+.Userslist ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  flex-wrap: wrap;
+}
+.single-user {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+  width: 400px;
+  background-color: #555;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+.single-user img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-mail {
+  margin: 10px 0;
+}
+.Footer {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(197, 51, 51);
+  color: rgb(206, 215, 22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
